@@ -1,0 +1,10 @@
+Known Issues in version 0.0.5
+- When some existing job is selected for edit, fields like the desciption and requestor are not picked up on the edit tab and thus causing crash down.
+
+Fixed issue in version 0.0.5
+- business unit field takes the column `bus_unit_id` in the job table now instead of being generated from customer industry (`business_unit`).
+  Displayed on job and invoice views. 
+- Add tests aiming to capture data gaps due to data update
+
+Known Issues in version 0.0.4
+- Due date is not functioning due to discrepancy of data, issue_date and pay)method especially. 

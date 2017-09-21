@@ -1,0 +1,19 @@
+Package: krakenApp
+Title: Kraken is a management reporting web application
+Version: 0.0.5
+Authors@R: c(
+    person("Ava", "Yang", , "ayang@mango-solutions.com", role = c("aut", "cre")),
+    person("Bethan", "Ashlee", , "bashlee@mango-solutions.com", role = "aut"),
+    person("Nicola", "Crane", , "ncrane@mango-solutions.com", role = "aut"),
+    person("Mango Solutions", role = "cph")
+    )
+Maintainer: 'Mango Solutions' <ayang@mango-solutions.com>
+Description: shiny app for job, invoice, customer and employee reporting
+Depends:
+    R (>= 3.2.2)
+Suggests: testthat	
+License: file LICENSE
+LazyData: true
+Imports: shiny
+Encoding: UTF-8
+RoxygenNote: 5.0.1
