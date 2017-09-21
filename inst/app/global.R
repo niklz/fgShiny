@@ -55,15 +55,4 @@ linkPath <- "file://filestore/mangowork/tmp/kraken/FY%2015-16"
 
 source("helpers.R", local = TRUE)
 
-## TERRIBLE LOADING OF DATA FILES FROM HDD WILL REMOVE
 
-skills <-  read.csv("../../../dataFiles/skills.csv",
-                    stringsAsFactors = FALSE,
-                    header = FALSE)
-
-skills <- skills$V1
-
-
-skillsScores <- read.csv("../../../dataFiles/dummySkillsnew.csv",
-                         stringsAsFactors = FALSE,
-                         encoding = "UTF-8")

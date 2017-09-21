@@ -8,10 +8,10 @@ dashboardPage(
                   ),
   dashboardSidebar(
     sidebarMenu(
-	    menuItem("Job", tabName = "job", icon = icon("line-chart")),
-	    menuItem("Invoice", tabName = "invoice", icon = icon("credit-card")),
-	    menuItem("Customer", tabName = "customer", icon = icon("briefcase")),
-      menuItem("Employee", tabName = "employee", icon = icon("group"))
+	    menuItem("Home", tabName = "home", icon = icon("line-chart")),
+	    menuItem("Top Table", tabName = "topTable", icon = icon("credit-card")),
+	    menuItem("Extract Data", tabName = "extractData", icon = icon("briefcase")),
+      menuItem("Display Result", tabName = "displayResult", icon = icon("group"))
 	  )
   ),
 
@@ -20,17 +20,17 @@ dashboardPage(
     useShinyjs(),
 
     tabItems(
-      tabItem("job",
-	      source("screen/jobTab.R", local = TRUE)$value
+      tabItem("home",
+	      source("screen/homeTab.R", local = TRUE)$value
 	    ),
-      tabItem("invoice",
-	      source("screen/invoiceTab.R", local = TRUE)$value
+      tabItem("topTable",
+	      source("screen/topTableTab.R", local = TRUE)$value
 	    ),
-	    tabItem("customer",
-	      source("screen/customerTab.R", local = TRUE)$value
+	    tabItem("extractData",
+	      source("screen/extractDataTab.R", local = TRUE)$value
 	    ),
-	    tabItem("employee",
-	      source("screen/employeeTab.R", local = TRUE)$value
+	    tabItem("displayResult",
+	      source("screen/displayResultTab.R", local = TRUE)$value
 	    )
     )
   )
